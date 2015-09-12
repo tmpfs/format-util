@@ -8,6 +8,14 @@ Run the test specifications:
 npm test
 ```
 
+### Spec
+
+Compile test specifications for the browser (open `test/index.html`):
+
+```
+npm run spec
+```
+
 ### Cover
 
 Generate code coverage:

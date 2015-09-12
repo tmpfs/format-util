@@ -6,6 +6,7 @@ Table of Contents
   * [Usage](#usage)
   * [Developer](#developer)
     * [Test](#test)
+    * [Spec](#spec)
     * [Cover](#cover)
     * [Browserify](#browserify)
     * [Clean](#clean)
@@ -39,6 +40,14 @@ Run the test specifications:
 
 ```
 npm test
+```
+
+### Spec
+
+Compile test specifications for the browser (open `test/index.html`):
+
+```
+npm run spec
 ```
 
 ### Cover
