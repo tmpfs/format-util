@@ -7,7 +7,7 @@
   "browser": "./format.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/freeformsystems/format-util.git"
+    "url": "https://github.com/tmpfs/format-util.git"
   },
   "keywords": [
     "util",
@@ -27,7 +27,8 @@
     "clean": "rm -rf coverage ./format-util.js ./test/spec.js",
     "spec": "browserify -o test/spec.js -e test/index.js",
     "test": "NODE_ENV=test mocha ${SPEC:-test/spec}",
-    "cover": "NODE_ENV=test istanbul cover _mocha -- ${SPEC:-test/spec}"
+    "cover": "NODE_ENV=test istanbul cover _mocha -- ${SPEC:-test/spec}",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "mdp": {
     "title": "Format Util",
@@ -36,7 +37,7 @@
     "require": "lib",
     "links": "links.md",
     "toc": "Table of Contents",
-    "base": "https://github.com/freeformsystems/format-util",
+    "base": "https://github.com/tmpfs/format-util",
     "partial": [
       {
         "inc": [
