@@ -22,6 +22,7 @@
     "mocha": "~2.3.2"
   },
   "scripts": {
+    "lint": "jshint . && jscs .",
     "docs": "npm run readme",
     "readme": "mdp --force -v",
     "browserify": "browserify -o format-util.js -e ./format.js && du -bh format-util.js",

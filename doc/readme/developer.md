@@ -32,6 +32,15 @@ Create a standalone browserify build:
 npm run browserify
 ```
 
+### Lint
+
+Lint the source tree with [jshint][] and [jscs][]:
+
+```
+npm run lint
+```
+
+
 ### Clean
 
 Remove generated files:
