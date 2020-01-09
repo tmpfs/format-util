@@ -1,7 +1,7 @@
 {
   "name": "format-util",
   "description": "Lightweight format utility for the browser, based on util.format().",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "muji <noop@xpm.io>",
   "browser": "./format.js",
   "devDependencies": {
