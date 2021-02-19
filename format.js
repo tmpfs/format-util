@@ -1,10 +1,15 @@
 function format(fmt) {
-  var re = /(%?)(%([jds]))/g
+  var re = /(%?)(%([ojds]))/g
     , args = Array.prototype.slice.call(arguments, 1);
   if(args.length) {
     fmt = fmt.replace(re, function(match, escaped, ptn, flag) {
       var arg = args.shift();
       switch(flag) {
+        case 'o':
+          if (Array.isArray(arg)) {
+            arg = JSON.stringify(arg);
+            break;
+          }
         case 's':
           arg = '' + arg;
           break;
@@ -16,7 +21,7 @@ function format(fmt) {
           break;
       }
       if(!escaped) {
-        return arg; 
+        return arg;
       }
       args.unshift(arg);
       return match;

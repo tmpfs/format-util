@@ -46,6 +46,24 @@ describe("format-util:", function() {
     done();
   });
 
+  it("should format object string (%o)", function(done) {
+    var res = format('%o', 'foo');
+    expect(res).to.eql('foo');
+    done();
+  });
+
+  it("should format error (%o)", function(done) {
+    var res = format('%o', new Error('mock error'));
+    expect(res).to.eql('Error: mock error');
+    done();
+  });
+
+  it("should format object array (%o)", function(done) {
+    var res = format('%o', [1,2,3]);
+    expect(res).to.eql('[1,2,3]');
+    done();
+  });
+
   it("should format escaped string (%s)", function(done) {
     var res = format('%%s', 'foo');
     expect(res).to.eql('%s foo');
